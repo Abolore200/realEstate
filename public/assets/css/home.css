@@ -1,7 +1,49 @@
 @media screen and (max-width:768px) {
+    :root{
+        --open-sans: 'Open-Sans';
+        --inter: 'Inter';
+        --raleway: 'Raleway';
+        --dm-sans: 'DM Sans'
+    }
     *{padding:0;margin:0;outline:none;box-sizing:border-box;}
+    div,p{font-weight:400;}
     body{scroll-behavior:smooth;position:relative;}
     a{text-decoration:none;color:#fff;}
     body{width:100%;font-family:'Poppins', Verdana, Geneva, Tahoma, sans-serif;}
     html{scroll-behavior:smooth;width:100%;}
+    main{width:100%;margin-bottom:120px;}
+    .fixed-bottom-bar{width:100%;position:fixed;bottom:0;background-color:#fff;height:100px;}
+    .fixed-bottom-bar{display:flex;justify-content:center;align-items:center;box-shadow:0px -2px 11px rgba(0, 0, 0, 0.25);}
+    .fixed-bottom-bar .bottom-bar{height:70px;width:90%;margin:0 auto;background-color:#263238;border-radius:20px;display:flex;align-items:center;}
+    .home-icon,.chat-icon,.profile-icon{width:33.33%;display:flex;align-items:center;justify-content:center;}
+    .home-icon button,.chat-icon button,.profile-icon button{border:none;background-color:transparent;}
+    .home-icon button i,.chat-icon button i,.profile-icon button i{font-size:30px;color:#fff;}
+    .main{width:90%;margin:50px auto 0;}
+    /* .welcome{margin-top:;} */
+    .name-notification{display:flex;align-items:center;justify-content:space-between;}
+    .name-notification p{font-family:var(--inter);font-weight:700;font-size:27px;}
+    .name-notification i{font-size:27px;}
+    .product-image{margin-top:35px;}
+    .product-image .image{width:100%;height:400px;border-radius:30px;background-image:url(../images/welcomePage.jpg);}
+    .product-image .image{background-position:center;background-repeat:no-repeat;background-size:cover;}
+    .product-image .image{display:flex;justify-content:end;align-items:start;padding:20px 15px 25px;flex-direction:column;}
+    .product-image .image .apartment-name p{font-family:var(--dm-sans);color:#fff;font-size:30px;font-weight:700;}
+    .apartment-location{margin-top:10px;}
+    .product-image .image .apartment-location p{font-family:var(--dm-sans);color:#fff;font-size:18px;font-weight:400;}
+    .categories,.select-categories{width:100%;}
+    .categories{margin-top:60px;}
+    .select-categories{display:flex;flex-wrap:wrap;}
+    .add-property,.manage-property,.collect-rents,.appointments,.feedbacks{width:50%;height:170px;margin-bottom:30px;}
+    .add-property,.manage-property,.collect-rents,.appointments,.feedbacks{display:flex;align-items:center;justify-content:center;}
+    .add-property .btn a,.manage-property .btn a,.collect-rents .btn a,.appointments .btn a,.feedbacks .btn a{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;}
+    .add-property .btn a,.manage-property .btn a,.collect-rents .btn a,.appointments .btn a,.feedbacks .btn a{color:#263238;font-family:var(--inter);font-weight:600;font-size:18px;}
+    .add-property .btn a i,.manage-property .btn a i,.collect-rents .btn a i,.appointments .btn a i,.feedbacks .btn a i{font-size:40px;margin-bottom:8px;}
+    .add-property .btn,.manage-property .btn,.collect-rents .btn,.appointments .btn,.feedbacks .btn{width:170px;height:inherit;display:flex;justify-content:center;border-radius:30px;padding:15px;}
+    .add-property .btn,.collect-rents .btn,.feedbacks .btn{margin-right:auto;}
+    .manage-property .btn,.appointments .btn{margin-left:auto;}
+    .add-property .add-btn{background-color:rgba(255, 165, 0, 0.2);}
+    .manage-property .manage-btn{background-color:rgba(165, 42, 42, 0.2);}
+    .collect-rents .collect-btn{background-color:rgba(0, 128, 0, 0.2);}
+    .appointments .appoint-btn{background-color:rgba(0, 0, 255, 0.2);}
+    .feedbacks .feedback-btn{background-color:rgba(255, 0, 0, 0.2);}
 }
