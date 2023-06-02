@@ -1,4 +1,4 @@
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px){
     :root{
         --open-sans: 'Open-Sans';
         --inter: 'Inter';
@@ -46,4 +46,14 @@
     .collect-rents .collect-btn{background-color:rgba(0, 128, 0, 0.2);}
     .appointments .appoint-btn{background-color:rgba(0, 0, 255, 0.2);}
     .feedbacks .feedback-btn{background-color:rgba(255, 0, 0, 0.2);}
+}
+@media screen and (max-width:400px){
+    .add-property .btn, .manage-property .btn, .collect-rents .btn, .appointments .btn, .feedbacks .btn{width:160px;}
+    .add-property,.manage-property,.collect-rents,.appointments,.feedbacks{height:160px;}
+}
+@media screen and (max-width:321px){
+    .add-property .btn a i, .manage-property .btn a i, .collect-rents .btn a i, .appointments .btn a i, .feedbacks .btn a i{font-size:30px;}
+    .add-property .btn a, .manage-property .btn a, .collect-rents .btn a, .appointments .btn a, .feedbacks .btn a{font-size:16px;}
+    .add-property .btn, .manage-property .btn, .collect-rents .btn, .appointments .btn, .feedbacks .btn{width:135px;}
+    .add-property,.manage-property,.collect-rents,.appointments,.feedbacks{height:135px;}
 }
