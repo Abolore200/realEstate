@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Property - Real Estate</title>
+    <link rel="stylesheet" href="../assets/css/property/add.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="main">
+            <div class="back-arrow">
+                <a href="../home.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="add-property-form">
+                <div class="add-propety-head">
+                    <p>Add Property</p>
+                </div>
+                <form action="../home.html" method="get">
+                    <div class="property-name all-property">
+                        <label for="propertyName">Property Name</label><br>
+                        <input type="text" name="propertyName" id="propertyName">
+                    </div>
+                    <div class="property-location all-property">
+                        <label for="propertyLocation">Property Location</label><br>
+                        <input type="text" name="propertyLocation" id="propertyLocation">
+                    </div>
+                    <div class="property-range all-property">
+                        <label for="propertyRange">Property Range</label><br>
+                        <input type="number" min="1,000,000" max="50,000,000" name="propertyRange" id="propertyRange">
+                    </div>
+                    <div class="property-features all-property">
+                        <label for="propertyFeatures">Features of the property</label><br>
+                        <textarea name="propertyFeatures" id="propertyFeatures"></textarea>
+                    </div>
+                    <div class="property-images all-property">
+                        <p>Add Image of Property</p>
+                        <div class="flex-images">
+                            <div class="image-one imagesProperty">
+                                <div class="input-image Images">
+                                    <label for="imageOne">
+                                        <input type="file" name="imageOne" accept=".png,.jpg,.jpeg" id="imageOne">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="image-two imagesProperty">
+                                <div class="input-image Images">
+                                    <label for="imageTwo">
+                                        <input type="file" name="imageTwo" accept=".png,.jpg,.jpeg" id="imageTwo">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="image-three imagesProperty">
+                                <div class="input-image Images">
+                                    <label for="imageThree">
+                                        <input type="file" name="imageThree" accept=".png,.jpg,.jpeg" id="imageThree">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="image-four imagesProperty">
+                                <div class="input-image Images">
+                                    <label for="imageFour">
+                                        <input type="file" name="imageFour" accept=".png,.jpg,.jpeg" id="imageFour">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-video all-property">
+                        <p>Add Image of Property</p>
+                        <div class="input-video">
+                            <label for="propertyVideo">
+                                <input type="file" name="propertyVideo" accept=".mp4,.ogg" id="propertyVideo">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>click here to add video</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="property-description all-property">
+                        <label for="propertyDescription">Addtional Description of the Property</label><br>
+                        <textarea name="propertyDescription" id="propertyDescription"></textarea>
+                    </div>
+
+
+                    <div class="fixed-bottom-bar">
+                        <!-- <div class="bottom-bar"> -->
+                            <button type="submit">Continue</button>
+                        <!-- </div> -->
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <script src="../assets/js/addProperty/app.js"></script>
+</body>
+</html>
