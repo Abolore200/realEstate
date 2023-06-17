@@ -19,8 +19,6 @@ class HTML{
                         URL.revokeObjectURL(newImage_One.src);  // no longer needed, free memory
                     }
                     newImage_One.src = URL.createObjectURL(this.files[0]); // set src to blob url
-
-                    console.log(newVideo);
                     return newImage_One                
                 }
             });
@@ -46,7 +44,7 @@ const newImage_Four = document.createElement('img')
 const fileFour = document.querySelector('#imageFour')
 html.getImage(newImage_Four,fileFour)
 //
-
+//video
 const newVideo = document.createElement('video')
 const filevideo = document.querySelector('#propertyVideo')
 html.getImage(newVideo,filevideo)

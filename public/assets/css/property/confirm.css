@@ -15,4 +15,5 @@
     .confirm-property-form{margin-top:20px;}
     .confirm-propety-head{margin-bottom:15px;}
     .confirm-propety-head p{font-weight:600;font-size:22px;}
+    .display-property .property{display:flex;align-items:center;justify-content:space-between;margin:10px 0;}
 }
