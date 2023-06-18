@@ -9,6 +9,7 @@ allProperty.forEach(fill => {
 })
 //
 
+const newImg = document.querySelector('.newImg')
 class HTML{
     getImage(newImage_One,fileOne){
         window.addEventListener('load', function() {
@@ -19,7 +20,8 @@ class HTML{
                         URL.revokeObjectURL(newImage_One.src);  // no longer needed, free memory
                     }
                     newImage_One.src = URL.createObjectURL(this.files[0]); // set src to blob url
-                    return newImage_One                
+                    // return newImage_One
+                    newImg.appendChild(newImage_One)
                 }
             });
         });
@@ -43,7 +45,6 @@ html.getImage(newImage_Three,fileThree)
 const newImage_Four = document.createElement('img')
 const fileFour = document.querySelector('#imageFour')
 html.getImage(newImage_Four,fileFour)
-//
 //video
 const newVideo = document.createElement('video')
 const filevideo = document.querySelector('#propertyVideo')
@@ -55,6 +56,8 @@ const form = document.querySelector('form')
 form.addEventListener('submit', e => {
     e.preventDefault()
 
+    const submitBtn = document.querySelector('.fixed-bottom-bar button')
+
     if(propertyName.value.trim() == '' ||
         propertyLocation.value.trim() == '' ||
         propertyRange.value.trim() == '' ||
@@ -64,9 +67,13 @@ form.addEventListener('submit', e => {
         newImage_Two.src === '' ||
         newImage_Three.src === '' ||
         newImage_Four.src === '' ||
-        newVideo.src === ''){
+        newVideo.src === ''
+        ){
         //show error messages
         ui.invalidateForm()
+
+        //if form is empty, button to be enabled
+        submitBtn.disabled = false
     } else {
         if(window.location.href = './confirm.html'){
             const getProperty = {
@@ -84,7 +91,9 @@ form.addEventListener('submit', e => {
                 video: newVideo.src
             }
             ui.saveProperty(getProperty);
+
+            //if form is fiiled, button to be disabled
+            submitBtn.disabled = true
         }
-        // window.location.href = './confirm.html'
     }
 })
