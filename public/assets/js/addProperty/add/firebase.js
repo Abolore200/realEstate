@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-import { getDatabase, ref, set, child, update, remove } 
+import { getDatabase, ref, onValue, set, child, update, remove } 
 from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -22,14 +22,4 @@ const app = initializeApp(firebaseConfig);
 
 const db = getDatabase()
 
-const propertyName = document.querySelector('#propertyName')
-const propertyLocation = document.querySelector('#propertyLocation')
-const propertyRange = document.querySelector('#propertyRange')
-const propertyFeatures = document.querySelector('#propertyFeatures')
-const propertyDescription = document.querySelector('#propertyDescription')
-const form = document.querySelector('form')
-const fileOne = document.querySelector('#imageOne')
-
-
-export {db, propertyName, propertyLocation, propertyRange, propertyFeatures, propertyDescription, fileOne,
-form, ref, set, child, update, remove}
+export {db, ref, onValue, set, child, update, remove}

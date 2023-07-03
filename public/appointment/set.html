@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Appointment - Real Estate</title>
+    <link rel="stylesheet" href="../assets/css/appointment/set.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="main">
+            <div class="back-arrow">
+                <a href="./appointment.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="set-appointment-form">
+                <div class="set-appointment-head">
+                    <p>Set Appointment</p>
+                </div>
+                <form action="./confirm.html">
+                    <div class="client-name all-appointment">
+                        <label for="clientName">Client Name</label><br>
+                        <input type="text" name="clientName" id="clientName" autocomplete="off">
+                    </div>
+                    <div class="choose-date all-appointment">
+                        <label for="chooseDate">Choose Date</label><br>
+                        <!-- <div class="inputClientName"> -->
+                            <input type="date" name="chooseDate" id="chooseDate">
+                            <!-- <i class="fa-solid fa-calendar-days"></i> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="choose-time all-appointment">
+                        <label for="chooseTime">Choose Time</label><br>
+                        <input type="time" name="chooseTime" id="chooseTime">
+                    </div>
+
+                    <div class="fixed-bottom-bar">
+                        <button type="submit">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="../assets/js/appointment/set-appointment/set.js"></script>
+    <script type="module" src="../assets/js/appointment/set-appointment/ui.js"></script>
+</body>
+</html>

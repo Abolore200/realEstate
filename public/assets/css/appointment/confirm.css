@@ -1,0 +1,25 @@
+@media screen and (max-width:768px){
+    *{padding:0;margin:0;outline:none;box-sizing:border-box;}
+    div,p{font-weight:400;}
+    body{scroll-behavior:smooth;position:relative;}
+    a{text-decoration:none;color:#fff;}
+    body{width:100%;font-family:'Poppins', Verdana, Geneva, Tahoma, sans-serif;}
+    html{scroll-behavior:smooth;width:100%;}
+    .fixed-bottom-bar{width:100%;position:fixed;bottom:0;background-color:#fff;height:100px;left:0;}
+    .fixed-bottom-bar{display:flex;justify-content:center;align-items:center;box-shadow:0px -2px 11px rgba(0, 0, 0, 0.25);}
+    .fixed-bottom-bar button{height:70px;width:90%;margin:0 auto;background-color:#263238;border-radius:50px;display:flex;align-items:center;justify-content:center;}
+    .fixed-bottom-bar button {font-family:'Open Sans';font-weight:800;font-size:23px;color:#fff;}
+    .main{width:90%;margin:30px auto 200px;}
+    .back-arrow{width:100%;}
+    .back-arrow a i{color:#000;font-size:30px;}
+    .confirm-appointment-form{margin-top:20px;}
+    .confirm-appointment-head{margin-bottom:15px;}
+    .confirm-appointment-head p{font-weight:600;font-size:22px;}
+    .con-appointment{margin-top:40px;}
+    .con-appointment .appoint{display:flex;justify-content:space-between;margin:25px 0;}
+    .con-appointment .appoint:first-child{margin-top:0px;}
+    .con-appointment .client-name p:last-child{text-transform:capitalize;}
+    .con-appointment .appoint p{font-family:'Inter';}
+    .con-appointment .appoint p:first-child{font-size:20px;font-weight:500;margin-right:50px;text-align:start;}
+    .con-appointment .appoint p:last-child{font-size:23px;font-weight:700;text-align:end;}
+}
