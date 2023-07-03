@@ -1,0 +1,23 @@
+@media screen and (max-width:768px){
+    *{padding:0;margin:0;outline:none;box-sizing:border-box;}
+    div,p{font-weight:400;}
+    body{scroll-behavior:smooth;position:relative;}
+    a{text-decoration:none;color:#fff;}
+    body{width:100%;font-family:'Inter', Verdana, Geneva, Tahoma, sans-serif;}
+    html{scroll-behavior:smooth;width:100%;}
+    .main{width:90%;margin:30px auto 200px;}
+    .back-arrow{width:100%;}
+    .back-arrow a i{color:#000;font-size:30px;}
+    .view-appointment-form{margin-top:20px;}
+    .view-appointment-head{margin-bottom:15px;}
+    .view-appointment-head p{font-weight:600;font-size:22px;}
+    .view-appoint .date,.view-appoint .time{display:flex;justify-content:space-between;}
+    .view-appoint:first-child{margin-top:0px;}
+    .view-appoint .date p:first-child,.view-appoint .time p:first-child{font-size:20px;font-weight:400;margin-right:50px;text-align:start;}
+    .view-appoint .date p:last-child,.view-appoint .time p:last-child{font-size:23px;font-weight:600;text-align:end;}
+    .view-appoint .appoint p{font-family:'Poppins';}
+    .view-appoint .client-name p{font-family:'DM Sans';font-weight:700;font-size:26px;text-transform:capitalize;}
+    .view-appoint{margin:15px 0}
+    .view-appoint .client-name,.view-appoint .date,.view-appoint .time{margin:5px 0;}
+    .list-of-appointments{margin-top:20px;}
+}
