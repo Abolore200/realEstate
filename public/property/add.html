@@ -31,19 +31,19 @@
                 <form action="./confirm.html" >
                     <div class="property-name all-property">
                         <label for="propertyName">Property Name</label><br>
-                        <input required type="text" name="propertyName" id="propertyName">
+                        <input type="text" name="propertyName" id="propertyName">
                     </div>
                     <div class="property-location all-property">
                         <label for="propertyLocation">Property Location</label><br>
-                        <input required type="text" name="propertyLocation" id="propertyLocation">
+                        <input type="text" name="propertyLocation" id="propertyLocation">
                     </div>
                     <div class="property-range all-property">
                         <label for="propertyRange">Property Range</label><br>
-                        <input required type="number" min="1,000,000" max="50,000,000" name="propertyRange" id="propertyRange">
+                        <input type="number" min="1,000,000" max="50,000,000" name="propertyRange" id="propertyRange">
                     </div>
                     <div class="property-features all-property">
                         <label for="propertyFeatures">Features of the property</label><br>
-                        <textarea required name="propertyFeatures" id="propertyFeatures"></textarea>
+                        <textarea name="propertyFeatures" id="propertyFeatures"></textarea>
                     </div>
                     <div class="property-images all-property">
                         <p>Add Image of Property</p>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="property-description all-property">
                         <label for="propertyDescription">Addtional Description of the Property</label><br>
-                        <textarea required name="propertyDescription" id="propertyDescription"></textarea>
+                        <textarea name="propertyDescription" id="propertyDescription"></textarea>
                     </div>
 
 
@@ -107,6 +107,7 @@
         </div>
     </main>
 
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
     <script type="module" src="../assets/js/addProperty/add/firebase.js"></script>
     <script type="module" src="../assets/js/addProperty/add/app.js"></script>
     <script type="module" src="../assets/js/addProperty/add/ui.js"></script>

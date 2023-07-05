@@ -19,12 +19,16 @@
     .display-property .allProperty{margin:20px 0;}
     .allProperty .property p:first-child{font-weight:500;font-size:18px;margin-right:100px;}
     .allProperty .property p:last-child{font-weight:700;font-size:20px;text-transform:capitalize;text-align:end;}
-    .all-images .selectedImg{width:120px;height:120px;margin:0 10px;}
+    .all-images .selectedImg{width:33.33%;height:120px;display:flex;align-items:center;justify-content:center;margin-bottom:5px;}
     .all-images .selectedImg:first-child{margin-left:0;}
     .all-images .selectedImg:last-child{margin-right:0;}
+    .all-images .selectedImg .width-auto-img{width:113px;height:113px;}
     .all-images .selectedImg img{width:100%;height:100%;border-radius:10px;}
-    .propertyImages .all-images{display:flex;overflow-x:scroll;}
+    .propertyImages .all-images{display:flex;flex-wrap:wrap;}
     .propertyVideo .selectedVideo{width:100%;height:350px;border-radius:10px;}
     .propertyVideo .selectedVideo video{width:100%;height:100%;border-radius:10px;}
     .display_file{width:200px;height:200px;}
+    .all-images .selectedImg:nth-child(2) .width-auto-img{margin:0 auto;}
+    .all-images .selectedImg:first-child .width-auto-img, .all-images .selectedImg:last-child .width-auto-img{margin-right:auto;}
+    .all-images .selectedImg:nth-child(3) .width-auto-img{margin-right:0;}
 }
