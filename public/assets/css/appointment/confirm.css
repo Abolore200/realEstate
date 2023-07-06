@@ -20,6 +20,6 @@
     .con-appointment .appoint:first-child{margin-top:0px;}
     .con-appointment .client-name p:last-child{text-transform:capitalize;}
     .con-appointment .appoint p{font-family:'Inter';}
-    .con-appointment .appoint p:first-child{font-size:20px;font-weight:500;margin-right:50px;text-align:start;}
-    .con-appointment .appoint p:last-child{font-size:23px;font-weight:700;text-align:end;}
+    .con-appointment .appoint p:first-child{font-size:17px;font-weight:500;margin-right:50px;text-align:start;}
+    .con-appointment .appoint p:last-child{font-size:20px;font-weight:700;text-align:end;}
 }

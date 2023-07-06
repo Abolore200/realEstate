@@ -1,0 +1,28 @@
+@media screen and (max-width:768px){
+    *{padding:0;margin:0;outline:none;box-sizing:border-box;}
+    div,p{font-weight:400;}
+    body{scroll-behavior:smooth;position:relative;}
+    a{text-decoration:none;color:#fff;}
+    body{width:100%;font-family:'Poppins', Verdana, Geneva, Tahoma, sans-serif;}
+    html{scroll-behavior:smooth;width:100%;}
+    .fixed-bottom-bar{width:100%;position:fixed;bottom:0;background-color:#fff;height:100px;left:0;}
+    .fixed-bottom-bar{display:flex;justify-content:center;align-items:center;box-shadow:0px -2px 11px rgba(0, 0, 0, 0.25);}
+    .fixed-bottom-bar button{height:70px;width:90%;margin:0 auto;background-color:#263238;border-radius:50px;display:flex;align-items:center;justify-content:center;}
+    .fixed-bottom-bar button {font-family:'Open Sans';font-weight:800;font-size:23px;color:#fff;}
+    .main{width:90%;margin:30px auto 200px;}
+    .back-arrow{width:100%;}
+    .back-arrow a i{color:#000;font-size:30px;}
+    .manage-property-form{margin-top:20px;}
+    .manage-propety-head{margin-bottom:15px;}
+    .manage-propety-head p{font-weight:600;font-size:22px;}
+    .property_home{display:flex;width:100%;margin-bottom:20px;align-items:center;}
+    .property_home .property_image{width:30%;margin-right:5px;height:120px;}
+    .property_home .property_image img{width:100%;height:100%;border-radius:10px;}
+    .property_home .property_details{width:70%;margin-left:5px;}
+    .property_home .property_details{display:flex;flex-direction:column;}
+    .property_home .property_details .property{margin:3px 0;}
+    .property_home .property_details .name_of_property p{font-weight:700;font-family:'DM Sans';font-size:23px;text-transform:capitalize;}
+    .property_home .property_details .location_of_property p{font-weight:400;font-size:20px;text-transform:capitalize;}
+    .property_home .property_details .range_of_property p{font-size:23px;font-weight:600;}
+    .property_home .property_details .range_of_property p,.property_home .property_details .location_of_property p{font-family:'Poppins';}
+}

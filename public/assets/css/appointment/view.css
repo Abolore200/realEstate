@@ -13,10 +13,10 @@
     .view-appointment-head p{font-weight:600;font-size:22px;}
     .view-appoint .date,.view-appoint .time{display:flex;justify-content:space-between;}
     .view-appoint:first-child{margin-top:0px;}
-    .view-appoint .date p:first-child,.view-appoint .time p:first-child{font-size:20px;font-weight:400;margin-right:50px;text-align:start;}
-    .view-appoint .date p:last-child,.view-appoint .time p:last-child{font-size:23px;font-weight:600;text-align:end;}
+    .view-appoint .date p:first-child,.view-appoint .time p:first-child{font-size:17px;font-weight:400;margin-right:50px;text-align:start;}
+    .view-appoint .date p:last-child,.view-appoint .time p:last-child{font-size:20px;font-weight:600;text-align:end;}
     .view-appoint .appoint p{font-family:'Poppins';}
-    .view-appoint .client-name p{font-family:'DM Sans';font-weight:700;font-size:26px;text-transform:capitalize;}
+    .view-appoint .client-name p{font-family:'DM Sans';font-weight:700;font-size:23px;text-transform:capitalize;}
     .view-appoint{margin:15px 0}
     .view-appoint .client-name,.view-appoint .date,.view-appoint .time{margin:5px 0;}
     .list-of-appointments{margin-top:20px;}
