@@ -25,4 +25,6 @@
     .property_home .property_details .location_of_property p{font-weight:400;font-size:20px;text-transform:capitalize;}
     .property_home .property_details .range_of_property p{font-size:23px;font-weight:600;}
     .property_home .property_details .range_of_property p,.property_home .property_details .location_of_property p{font-family:'Poppins';}
+    .display-property a {color:#000;}
+    .property-block{display:none;}
 }
