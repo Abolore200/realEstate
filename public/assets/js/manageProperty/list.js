@@ -13,7 +13,7 @@ for(let i = 0; i < propertyJSON.length; i++){
             </div>
             <div class="property_details">
                 <div class="name_of_property property">
-                    <p> ${propertyJSON[i]?.name_of_property.substring(0, 10)}... </p>
+                    <p> ${(propertyJSON[i].name_of_property.length > 15 ? propertyJSON[i]?.name_of_property.substring(0, 15) + "...." : propertyJSON[i]?.name_of_property)} </p>
                 </div>
                 <div class="location_of_property property">
                     <p> ${propertyJSON[i]?.location_of_property} </p>
