@@ -70,7 +70,7 @@ form.addEventListener('submit', e => {
       propertyLocation.value.trim() == '' ||
       propertyRange.value.trim() == '' ||
       propertyFeatures.value.trim() == '' ||
-      propertyDescription.value.trim() == '' ||
+      // propertyDescription.value.trim() == '' ||
       newImage_One.value === '' ||
       newImage_Two.value === '' ||
       newImage_Three.value === '' ||
@@ -108,8 +108,8 @@ class UI{
         errorMsg.remove()
     },3000)
   }
-  storePropertyImage(url){
-    propertyImageUrl.push(url)
+  async storePropertyImage(url){
+    await propertyImageUrl.push(url)
     if(propertyImageUrl !== null || propertyImageUrl !== []){
       parentImageOne.style.backgroundImage = `url(${propertyImageUrl[0]})`
       parentImageTwo.style.backgroundImage = `url(${propertyImageUrl[1]})`
