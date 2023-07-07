@@ -16,7 +16,14 @@ const newImage_Four = document.querySelector('#imageFour')
 
 const allImages = [newImage_One,newImage_Two,newImage_Three,newImage_Four]
 
-const propertyImageUrl = []
+// const parentImageOne = newImage_One.parentElement
+// const propertyImageUrl = []
+// if(propertyImageUrl !== null || propertyImageUrl !== []){
+//   parentImageOne.style.backgroundImage = `url(${propertyImageUrl[0]})`
+// }
+
+
+// parentImageOne.style.backgroundImage = `url(${propertyImageUrl[0]})`
 
 allImages.forEach(img => {
   img.addEventListener('change', e => {

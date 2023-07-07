@@ -1,10 +1,16 @@
 const property = localStorage.getItem('properties')
 let propertyJSON = JSON.parse(property)
 
+
 const display = document.querySelector('.display-property')
 
 let lists_of_properties = ""
 for(let i = 0; i < propertyJSON.length; i++){
+
+    const app = minName(propertyJSON[i].name_of_property)
+
+    console.log(app);
+
     lists_of_properties += `
         <a href="./viewproperty.html" class="property_link">
             <div class="property_home">
@@ -13,7 +19,7 @@ for(let i = 0; i < propertyJSON.length; i++){
                 </div>
                 <div class="property_details">
                     <div class="name_of_property property">
-                        <p>${(propertyJSON[i].name_of_property.length > 15 ? propertyJSON[i]?.name_of_property.substring(0, 15) + "...." : propertyJSON[i]?.name_of_property)}</p>
+                        <p>${app}</p>
                     </div>
                     <div class="location_of_property property">
                         <p>${propertyJSON[i]?.location_of_property}</p>
@@ -37,6 +43,14 @@ for(let i = 0; i < propertyJSON.length; i++){
             </div>
         </a>
     `
+}
+
+function minName(name){
+    if(name.length > 20){
+        const reduceNameLength = `${name.substring(0,20)}...`
+
+        return reduceNameLength
+    } return name
 }
 
 display.innerHTML = lists_of_properties

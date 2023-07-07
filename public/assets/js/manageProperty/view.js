@@ -1,8 +1,6 @@
 const viewproperty = sessionStorage.getItem('viewProperty')
 let propertyJSON = JSON.parse(viewproperty)
 
-// console.log(propertyJSON?.name);
-
 const display = document.querySelector('.display-property')
 
 const newDiv = document.createElement('div')
