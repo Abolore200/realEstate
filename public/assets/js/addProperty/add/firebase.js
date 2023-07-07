@@ -16,11 +16,12 @@ const newImage_Four = document.querySelector('#imageFour')
 
 const allImages = [newImage_One,newImage_Two,newImage_Three,newImage_Four]
 
-// const parentImageOne = newImage_One.parentElement
-// const propertyImageUrl = []
-// if(propertyImageUrl !== null || propertyImageUrl !== []){
-//   parentImageOne.style.backgroundImage = `url(${propertyImageUrl[0]})`
-// }
+const parentImageOne = newImage_One.parentElement
+const parentImageTwo = newImage_Two.parentElement
+const parentImageThree = newImage_Three.parentElement
+const parentImageFour = newImage_Four.parentElement
+
+const propertyImageUrl = []
 
 
 // parentImageOne.style.backgroundImage = `url(${propertyImageUrl[0]})`
@@ -109,6 +110,12 @@ class UI{
   }
   storePropertyImage(url){
     propertyImageUrl.push(url)
+    if(propertyImageUrl !== null || propertyImageUrl !== []){
+      parentImageOne.style.backgroundImage = `url(${propertyImageUrl[0]})`
+      parentImageTwo.style.backgroundImage = `url(${propertyImageUrl[1]})`
+      parentImageThree.style.backgroundImage = `url(${propertyImageUrl[2]})`
+      parentImageFour.style.backgroundImage = `url(${propertyImageUrl[3]})`
+    }
   }
   createProperty(){
     const property = {
