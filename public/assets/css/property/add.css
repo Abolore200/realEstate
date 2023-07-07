@@ -38,5 +38,5 @@
     .property-video .input-video{width:100%;border:1px solid #808080;background-color:rgba(128, 128, 128, 0.1);height:300px;border-radius:10px;}
     form .setError .error{color:red;font-weight:700;font-size:20px;text-align:center;padding:10px 0;text-transform:capitalize;font-family:'Inter';}
     .all-property .note-msg p{font-size:14px;color:red;}
-    .imagesProperty .Images label{background-repeat:no-repeat;background-size:cover;background-position:center;}
+    .imagesProperty .Images label{background-repeat:no-repeat;background-size:cover;background-position:center;border-radius:10px;}
 }
