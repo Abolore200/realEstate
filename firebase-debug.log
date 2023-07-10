@@ -1,0 +1,67 @@
+[debug] [2023-07-10T12:21:27.410Z] ----------------------------------------------------------------------
+[debug] [2023-07-10T12:21:27.415Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-10T12:21:27.416Z] CLI Version:   12.4.0
+[debug] [2023-07-10T12:21:27.417Z] Platform:      win32
+[debug] [2023-07-10T12:21:27.418Z] Node Version:  v18.12.1
+[debug] [2023-07-10T12:21:27.419Z] Time:          Mon Jul 10 2023 13:21:27 GMT+0100 (West Africa Standard Time)
+[debug] [2023-07-10T12:21:27.419Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-10T12:21:27.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-10T12:21:27.567Z] > authorizing via signed-in user (abolore200@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Desktop\Frontend\realEstate
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-10T12:21:38.423Z] Using project from CLI flag: realestate-4ef65
+[debug] [2023-07-10T12:21:38.427Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/realestate-4ef65 [none]
+[debug] [2023-07-10T12:21:53.635Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/realestate-4ef65 200
+[debug] [2023-07-10T12:21:53.636Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/realestate-4ef65 {"projectId":"realestate-4ef65","projectNumber":"369476045299","displayName":"realEstate","name":"projects/realestate-4ef65","resources":{"hostingSite":"realestate-4ef65","realtimeDatabaseInstance":"realestate-4ef65-default-rtdb","storageBucket":"realestate-4ef65.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_fb8bd503-5f70-49cb-b24c-56b17262b095"}
+[info] i  Using project realestate-4ef65 (realEstate) 
+[info] 
+=== Functions Setup
+[debug] [2023-07-10T12:21:53.659Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-10T12:21:53.659Z] > authorizing via signed-in user (abolore200@gmail.com)
+[debug] [2023-07-10T12:21:53.659Z] [iam] checking project realestate-4ef65 for permissions ["firebase.projects.get"]
+[debug] [2023-07-10T12:21:53.661Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/realestate-4ef65:testIamPermissions [none]
+[debug] [2023-07-10T12:21:53.661Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/realestate-4ef65:testIamPermissions x-goog-quota-user=projects/realestate-4ef65
+[debug] [2023-07-10T12:21:53.661Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/realestate-4ef65:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-10T12:22:15.933Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/realestate-4ef65:testIamPermissions 200
+[debug] [2023-07-10T12:22:15.933Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/realestate-4ef65:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-10T12:22:15.935Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-07-10T12:22:15.936Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/realestate-4ef65
+[debug] [2023-07-10T12:22:15.940Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-07-10T12:22:15.941Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/realestate-4ef65
+[debug] [2023-07-10T12:22:19.206Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com 200
+[debug] [2023-07-10T12:22:19.207Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-07-10T12:22:19.209Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-07-10T12:22:19.209Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/realestate-4ef65
+[debug] [2023-07-10T12:22:19.221Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/runtimeconfig.googleapis.com 200
+[debug] [2023-07-10T12:22:19.221Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-07-10T12:22:23.331Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-07-10T12:22:23.332Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-07-10T12:22:33.345Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-07-10T12:22:33.346Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/realestate-4ef65/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/realestate-4ef65
+[debug] [2023-07-10T12:22:59.417Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
